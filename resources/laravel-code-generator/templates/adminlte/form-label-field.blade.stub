@@ -1,1 +1,0 @@
-    <label for="[% field_name %]" class="col-md-3 col-sm-6 control-label">[% field_title %]</label>
