@@ -1,0 +1,217 @@
+@media all and (max-width: 720px) {
+    .headercol {
+        background-color: white;
+        border: 3px solid #003e74;
+        /* margin-top: 24px; */
+        /* margin-bottom: 20px; */
+        padding: 5px 21px 8px 21px;
+        box-shadow: 10px 3px 3px 0px #003e74;
+        position: fixed;
+        z-index: 1;
+        top: 57px;
+    }
+    #nash_joiningform {
+        margin-top: 215px !important;
+    }
+    #profileimage .p-image {
+        position: absolute;
+        top: 100px;
+        right: 81px !important;
+        color: #666666;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+}
+ul li {
+    list-style: none;
+}
+.row {
+    color: #003e74;
+}
+.fa-pencil {
+    font-size: 18px;
+}
+#profileimage .profile-pic {
+    max-width: 115px;
+    max-height: 200px;
+    display: block;
+    text-align: center;
+}
+
+#profileimage .file-upload {
+    display: none;
+}
+#profileimage .circle {
+    border-radius: 1000px !important;
+    overflow: hidden;
+    width: 128px;
+    height: 128px;
+    /* border: 8px solid rgba(241, 232, 232, 0.7); */
+    border: 8px solid #003e74;
+    margin-left: 55px;
+
+    /* position: absolute; */
+    /* top: 72px; */
+}
+#profileimage img {
+    max-width: 100%;
+    height: auto;
+}
+#profileimage .p-image {
+    position: absolute;
+    top: 100px;
+    right: 171px;
+    color: #666666;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#profileimage .p-image:hover {
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#profileimage .upload-button {
+    font-size: 1.2em;
+}
+
+#profileimage .upload-button:hover {
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    color: #999;
+}
+
+.headercol {
+    background-color: white;
+    border: 3px solid #003e74;
+    /* margin-top: 24px; */
+    /* margin-bottom: 20px; */
+    padding: 5px 21px 8px 21px;
+    box-shadow: 10px 3px 3px 0px #003e74;
+    position: fixed;
+    z-index: 1;
+    top: 57px;
+}
+
+.side_quick_link {
+    position: fixed;
+    z-index: 1;
+    margin-top: 180px;
+}
+#nash_joiningform {
+    margin-top: 205px;
+}
+.card {
+    background-color: white;
+    border: 3px solid #003e74;
+    margin-top: 24px;
+    margin-bottom: 20px;
+    padding: 21px;
+    box-shadow: 10px 3px 3px 0px #003e74;
+}
+.headercol ul {
+    padding-left: 0px !important;
+}
+.quicklink ul {
+    padding-left: 0px !important;
+}
+.headercol .sub-basic li h6.fifty {
+    width: 50%;
+    float: left;
+}
+.headercol .sub-basic li span {
+    padding: 5px;
+}
+.pendingaction ul li {
+    font-size: 11px;
+    padding: 3px;
+}
+.quicklink ul li strong {
+    padding: 5px;
+}
+.quicklink ul li span {
+    float: right;
+}
+.quicklink ul li {
+    cursor: pointer;
+}
+.card-title i {
+    padding: 5px;
+}
+#nash_joiningform ul {
+    padding-left: 0px !important;
+}
+#nash_joiningform ul li span {
+    font-size: 15px;
+    color: cadetblue !important;
+}
+/* .fade-scale {
+    transform: scale(0.9);
+    opacity: 0;
+    transition: all .2s linear;
+    display: block !important;
+}
+
+.fade-scale.show {
+    opacity: 1;
+    transform: scale(1);
+} */
+
+input,
+select {
+    border-radius: 0px !important;
+}
+.modal {
+    color: #003e74;
+}
+.modal label {
+    font-weight: 400 !important;
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+/* .btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+} */
+
+.upload-btn-wrapper input[type="file"] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.primary_head_class {
+    font-size: 15px;
+}
+.bodys {
+    padding: 12px;
+}
+.primary_head_class > i {
+    /* padding: 2px; */
+
+    font-size: 13px;
+}
+.output_class {
+    padding-left: 2px;
+    font-size: 15px;
+    color: grey;
+    /* text-align: justify; */
+}
+.falsecolor {
+    color: grey;
+    font-size: 10px;
+}
+ul li b {
+    color: grey;
+    font-size: 14px;
+}
+ul.list-inline.col-md-12 {
+    font-size: 15px;
+    color: grey;
+}

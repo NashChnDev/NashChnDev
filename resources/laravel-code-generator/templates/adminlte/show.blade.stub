@@ -1,0 +1,76 @@
+@extends('[% layout_name %]')
+
+@section('page-title','[% model_name_title %] View')
+
+@section('content')
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0 text-dark">[% model_name_title %]</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
+			  <li class="breadcrumb-item"><a href="{{ route('[% index_route_name %]') }}">[% model_plural %]</a></li>
+              <li class="breadcrumb-item active">View</li>
+			</ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+
+    <!-- Main content -->
+	
+    <section class="content">
+      <div class="container-fluid">
+        <!-- Info boxes -->
+        <div class="row">
+			<div class="col-12">
+				<div class="card card-primary card-outline">
+					<div class="card-header">
+						<h3 class="card-title clearfix">
+						   {{ isset([% model_header %]) ? [% model_header %] : '[% model_name_title %]' }}
+						   <div class="float-right">
+								<form method="POST" action="{!! route('[% destroy_route_name %]', $[% model_name_singular_variable %]->[% primary_key %]) !!}" accept-charset="UTF-8">
+									<input name="_method" value="DELETE" type="hidden">
+									{{ csrf_field() }}
+									<div class="btn-group btn-group-sm" role="group">
+										<a href="{{ route('[% index_route_name %]') }}" class="btn btn-primary btn-sm" title="[% show_all_models %]">
+											<span class="fa fa-th-list" aria-hidden="true"></span>
+										</a>
+
+										<a href="{{ route('[% create_route_name %]') }}" class="btn btn-success btn-sm" title="[% create_model %]">
+											<span class="fa fa-plus" aria-hidden="true"></span>
+										</a>
+										
+										<a href="{{ route('[% edit_route_name %]', $[% model_name_singular_variable %]->[% primary_key %] ) }}" class="btn btn-primary btn-sm" title="[% edit_model %]">
+											<span class="fas fa-pencil-alt" aria-hidden="true"></span>
+										</a>
+
+										<button type="submit" class="btn btn-danger btn-sm" title="[% delete_model %]" onclick="return confirm(&quot;[% confirm_delete %]?&quot;)">
+											<span class="fa fa-trash" aria-hidden="true"></span>
+										</button>
+									</div>
+								</form>
+
+							</div>
+						</h3>
+					</div>
+					<div class="card-body">
+						<div class="card-text">
+							[% table_rows %]
+						</div>
+					</div>
+				</div><!--/. card -->
+			</div>
+		</div> <!--/. row -->
+	  </div><!--/. container-fluid -->
+    </section>
+	<!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+@endsection
